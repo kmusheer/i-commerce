@@ -125,7 +125,7 @@ export const productSlice = createSlice({
         state.status = 'idle';
         index = state.products.findIndex((product) => product.id === action.payload.id)
         state.products[index] =action.payload
-        // state.selectedProduct = action.payload;
+        state.selectedProduct = action.payload;
       })
   },
 })
